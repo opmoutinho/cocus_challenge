@@ -1,0 +1,9 @@
+{
+    "cucumberautocomplete.steps": ["test/steps/*steps.js"],
+    "cucumberautocomplete.syncfeatures": "test/features/*feature",
+    "cucumberautocomplete.strictGherkinCompletion": true,
+    "cucumberautocomplete.strictGherkinValidation": true,
+    "cucumberautocomplete.smartSnippets": true,
+    "cucumberautocomplete.stepsInvariants": true,
+    "cucumberautocomplete.gherkinDefinitionPart": "(Given|When|Then)\\("
+}

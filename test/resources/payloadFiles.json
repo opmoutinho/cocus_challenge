@@ -1,0 +1,7 @@
+{
+    "PUT": {
+    },
+    "POST":{
+        "Register Success": "../../test/resources/TEST_001/correctInfo.json"
+    }
+}

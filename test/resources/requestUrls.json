@@ -1,0 +1,8 @@
+{
+    "GET": {
+        "users": "https://reqres.in/api/users"
+    },
+    "POST":{
+        "register": "https://reqres.in/api/register"
+    }
+}
