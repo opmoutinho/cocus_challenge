@@ -10,6 +10,7 @@ Requires:
 
 - `git clone https://github.com/opmoutinho/cocus_challenge.git`
 - `npm install`
+- replace (*./src/aws/resources/credentials.json*) with the credentials sent in the creds file.
 - `docker composose up`
 - Open a new terminal
 - `npm run build`
@@ -68,7 +69,7 @@ For this specific endpoint NO. I could test without any payload, or invalid pass
 
 ## Information and observations:
 
-> **The credentials (*./src/aws/resources/credentials.json*) will only be valid for 7 days.**
+> **The credentials (*sent by e-mail*) will only be valid for 7 days.**
 
 ### **Can I Rerun the tests without shutting down the docker container?**
 > No. My main focus was to **build an MVP**. I'm not deleting the messages after they are read, so in a rerun you could probably end up getting mismatch between messageIDs and desired content.
