@@ -28,6 +28,7 @@ When("the user consumes the sent messages", async function () {
 
 Then("the user verifies all messages were correctly delivered", async function () {
     ids.forEach(id => {
+        console.log(sentMessages, receivedMessages)
         assert.deepStrictEqual(sentMessages.get(id), receivedMessages.get(id))
     })
 });
