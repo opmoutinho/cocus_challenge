@@ -4,9 +4,9 @@
 ### SETUP
 Bear in mind that I developed this solution in Windows. I used the CLI for most of the applications more specifically PowerShell.
 Requires:
-- 1. ***NPM*** ([installation guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
-- 2. ***Docker*** ([installation guide](https://docs.docker.com/desktop/install/windows-install/))
-- 3. ***AWS CLI*** ([instalattion guide](https://docs.docker.com/desktop/install/windows-install/))
+- ***NPM*** ([installation guide](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm))
+- ***Docker*** ([installation guide](https://docs.docker.com/desktop/install/windows-install/))
+- ***AWS CLI*** ([instalattion guide](https://docs.docker.com/desktop/install/windows-install/))
 
 - `git clone https://github.com/opmoutinho/cocus_challenge.git`
 - `npm install`
@@ -25,7 +25,7 @@ responses are in JSON format.
 #### 1 Scenario: Successful registration
 
 - [x] POST on https://reqres.in/api/register
-- [x]  Payload: email and password
+- [x] Payload: email and password
 - [x] Response: 200 along with a token
 
 #### 2 Scenario: Unsuccessful registration
@@ -66,7 +66,7 @@ For this specific endpoint NO. I could test without any payload, or invalid pass
     - [x] Consume previously produced messages from queue with cars details.
     - [x] Compare the produced and consumed messages to verify that all messages were delivered correctly.
 
-##Information and observations:
+## Information and observations:
 
 > **The credentials (*./src/aws/resources/credentials.json*) will only be valid for 7 days.**
 
