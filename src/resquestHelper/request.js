@@ -1,30 +1,31 @@
-const request = require('request');
+const fecth = require('node-fetch');
 
-function requestGet(url) {
-    request.get(url, (error, response, body) => {
-
-    if (error) { 
-        return error
-    }
- 
+async function requestGet(url) {
+    const response = await fecth(url, {
+        method: 'get'})
+    const status = await response.status;
+    const responseJson = await response.json();
     return {
-        "response": response,
-        "statusCode": response.statusCode,
-        "responseBody": body,
+        statusCode: status,
+        json: responseJson
     }
-});}
+}
 
-function requestPost(url, isJson, payload) {
-    
-    request.post({url:url, json:isJson, body:payload}, (error, response, body) => {
-        
-        if (error) { 
-            return error
-        }
- 
-        return {
-            "response": response,
-            "statusCode": response.statusCode,
-            "responseBody": body,
-        }
-});}
+async function requestPost(url, payloadInfo){
+    const payload = require(payloadInfo)
+    const response = await fecth(url, {
+        method: 'post', 
+        body:JSON.stringify(payload), 
+        headers: {'Content-Type': 'application/json'}})
+    const status = await response.status;
+    const responseJson = await response.json();
+    return {
+        statusCode: status,
+        json: responseJson
+    }
+}
+
+module.exports = {
+    requestGet,
+    requestPost
+}

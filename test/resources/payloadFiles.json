@@ -2,6 +2,7 @@
     "PUT": {
     },
     "POST":{
-        "Register Success": "../../test/resources/TEST_001/correctInfo.json"
+        "Register Success": "../../test/resources/Registration/correctInfo.json",
+        "Register Incorrect": "../../test/resources/Registration/incorrectInfo.json"
     }
 }

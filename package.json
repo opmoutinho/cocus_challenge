@@ -1,0 +1,28 @@
+{
+  "name": "cocus_challenge",
+  "version": "1.0.0",
+  "description": "Use the provided API at https://reqres.in/ for all tests in this section. All request payloads and\r responses are in JSON format.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "cucumber": "^6.0.7",
+    "esm": "^3.2.25",
+    "node-fetch": "^2.6.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "cucumber-js test/features --require \"test/steps/*steps.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opmoutinho/cocus_challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/opmoutinho/cocus_challenge/issues"
+  },
+  "homepage": "https://github.com/opmoutinho/cocus_challenge#readme"
+}
