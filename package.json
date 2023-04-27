@@ -14,6 +14,7 @@
   },
   "devDependencies": {},
   "scripts": {
+    "build" : "aws --endpoint-url=http://localhost:4566 sqs create-queue --queue-name cars && cucumber-js test/features --require \"test/steps/*steps.js\"",
     "test": "cucumber-js test/features --require \"test/steps/*steps.js\""
   },
   "repository": {

@@ -1,7 +1,6 @@
 {
-    "PUT": {
-    },
-    "POST":{
+    "PUT": {},
+    "POST": {
         "Register Success": "../../test/resources/Registration/correctInfo.json",
         "Register Incorrect": "../../test/resources/Registration/incorrectInfo.json"
     }
