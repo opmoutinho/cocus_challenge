@@ -24,15 +24,15 @@ responses are in JSON format.
 
 #### 1 Scenario: Successful registration
 
-- [ ] POST on https://reqres.in/api/register
-- [ ]  Payload: email and password
-- [ ] Response: 200 along with a token
+- [x] POST on https://reqres.in/api/register
+- [x]  Payload: email and password
+- [x] Response: 200 along with a token
 
 #### 2 Scenario: Unsuccessful registration
 
-- [ ] POST on https://reqres.in/api/register [x]
-- [ ] Payload: email [x]
-- [ ] Response: 400 along with an error [x]
+- [x] POST on https://reqres.in/api/register [x]
+- [x] Payload: email [x]
+- [x] Response: 400 along with an error [x]
 
 #### 3 Any other scenarios you would add to this endpoint?
 For this specific endpoint NO. I could test without any payload, or invalid password. But after reading the documentation, it only points out the already covered cases.
@@ -50,23 +50,23 @@ For this specific endpoint NO. I could test without any payload, or invalid pass
 
 #### Setup
 
-- [ ] Install Docker virtualization tool on your machine
-- [ ] Install Azure-cli tool on your machine - I opted this out I could not find a way to user Azure with Localstack
-- [ ] Pull an Localstack image
-- [ ] Have a Docker container running the downloaded Localstack image
-- [ ] Create a SQS queue on Localstack named “cars”
+- [x] Install Docker virtualization tool on your machine
+- [x] Install ~~Azure-cli~~ AWS cli tool on your machine - I opted this out I could not find a way to user Azure with Localstack
+- [x] Pull an Localstack image
+- [x] Have a Docker container running the downloaded Localstack image
+- [x] Create a SQS queue on Localstack named “cars”
 
 #### Test Messages
 ##### 1 Scenario: Messages are consumed successfully 
-- [ ]  Produce a few messages on queue with cars details. Message should contain details on a car as follows:
+- [x]  Produce a few messages on queue with cars details. Message should contain details on a car as follows:
         - Brand name
         - Model
         - Number of Doors
         - Indicating whether it is a Sports car or not
-    - [ ] Consume previously produced messages from queue with cars details.
-    - [ ] Compare the produced and consumed messages to verify that all messages were delivered correctly.
+    - [x] Consume previously produced messages from queue with cars details.
+    - [x] Compare the produced and consumed messages to verify that all messages were delivered correctly.
 
-##Information and observations:**
+##Information and observations:
 
 > **The credentials (*./src/aws/resources/credentials.json*) will only be valid for 7 days.**
 
