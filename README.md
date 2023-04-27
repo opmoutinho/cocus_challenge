@@ -66,17 +66,17 @@ For this specific endpoint NO. I could test without any payload, or invalid pass
     - [ ] Consume previously produced messages from queue with cars details.
     - [ ] Compare the produced and consumed messages to verify that all messages were delivered correctly.
 
-**Information and observations:**
+##Information and observations:**
 
 > **The credentials (*./src/aws/resources/credentials.json*) will only be valid for 7 days.**
-> 
-> **Can I Rerun the tests without shutting down the docker container?**
+
+### **Can I Rerun the tests without shutting down the docker container?**
 > No. My main focus was to **build an MVP**. I'm not deleting the messages after they are read, so in a rerun you could probably end up getting mismatch between messageIDs and desired content.
-> **What would you like to improve on the project?**
+### **What would you like to improve on the project?**
 > I tried to make the project as **scalable** as possible. I used the *Json files* as helpers to be able to highly scale the *Gherkin Sentences*, and reuse them as much as possible. But I recognize that the development was very ***objective-driven***, and I was trying to solve the problems. My next steps would include **deleting the received messages**, investigating and successfully integrating ***Azure cli*** instead of AWS and going **deeper** into the ***evaluations and assertions*** I am making.
-> **What were your biggest struggles in developing this solution?**
+### **What were your biggest struggles in developing this solution?**
 > My main struggle was the initial configuration. I was kinda lost without being able to rely on *playwright*, or *selenium*, or any other automation framework. But as soon as I ended up realizing that I could do much more with just ***JS***, I took off, until I had to face the struggle to try integrating ***Azure CLI*** with localstack, and wasn't able to.
-> **Did you enjoy doing this challenge?**
+### **Did you enjoy doing this challenge?**
 > Yes. It was very opositive to do this challenge to validate my BE testing skills. And to prove myself above all.
-> **What do you expect to be the feedback from yout solution?**
+### **What do you expect to be the feedback from yout solution?**
 > I really hope it is positive. I can understand if it is not the most "best practices" wise solution. But it's just a sample of what I can achieve and do. I'm really proud of what I was able to develop, and, above all, I had a lot of fun developing this solution. I'm really hoping for positive feedback, and **fingers crossed for a future job invitation**.
