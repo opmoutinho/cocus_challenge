@@ -7,12 +7,14 @@
     "test": "test"
   },
   "dependencies": {
+    "aws-sdk": "^2.1366.0",
     "cucumber": "^6.0.7",
     "esm": "^3.2.25",
     "node-fetch": "^2.6.9"
   },
   "devDependencies": {},
   "scripts": {
+    "build" : "aws --endpoint-url=http://localhost:4566 sqs create-queue --queue-name cars && cucumber-js test/features --require \"test/steps/*steps.js\"",
     "test": "cucumber-js test/features --require \"test/steps/*steps.js\""
   },
   "repository": {

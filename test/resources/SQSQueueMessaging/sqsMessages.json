@@ -1,0 +1,44 @@
+{
+    "message1": {
+        "MessageAttributes": {
+            "Title": {
+                "DataType": "String",
+                "StringValue": "McLaren"
+            },
+            "Author": {
+                "DataType": "String",
+                "StringValue": "Joseph Mac"
+            }
+        },
+        "MessageBody": "{\"Brand\": \"Mclaren\",\"Model\": \"SLS\",\"NumberOfDoors\": 2,\"isSportsCar\": true}",
+        "QueueUrl": "http://localhost:4566/000000000000/cars"
+    },
+    "message2": {
+        "MessageAttributes": {
+            "Title": {
+                "DataType": "String",
+                "StringValue": "Ferrari"
+            },
+            "Author": {
+                "DataType": "String",
+                "StringValue": "Enzo Ferr"
+            }
+        },
+        "MessageBody": "{\"Brand\": \"Ferrari\",\"Model\": \"F55\",\"NumberOfDoors\": 2,\"isSportsCar\": true}",
+        "QueueUrl": "http://localhost:4566/000000000000/cars"
+    },
+    "message3": {
+        "MessageAttributes": {
+            "Title": {
+                "DataType": "String",
+                "StringValue": "Lamborguinni"
+            },
+            "Author": {
+                "DataType": "String",
+                "StringValue": "Alberto Lamb"
+            }
+        },
+        "MessageBody": "{\"Brand\": \"Lamborguini\",\"Model\": \"Plower\",\"NumberOfDoors\": 2,\"isSportsCar\": false}",
+        "QueueUrl": "http://localhost:4566/000000000000/cars"
+    }
+}

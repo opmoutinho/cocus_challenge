@@ -2,7 +2,7 @@
     "GET": {
         "users": "https://reqres.in/api/users"
     },
-    "POST":{
+    "POST": {
         "register": "https://reqres.in/api/register"
     }
 }
